@@ -1,0 +1,18 @@
+1) identifier une fonctionnalité de ton projet (ex trouver l'ensemble d'amis de quelqu'un à partir d'une liste de relation)
+	je fais un scénario : pierre à deux amis jean et paul
+2) écrire un test pour tester la fonctionnalité (testSearchFriendsOf) du style 
+	friends=relations.searchFriendsOf(pierre) doit me retourner jean et paul
+	assertTrue(friends.contains(jean)), assertTrue(friends.contains(pierre))
+3) pierre existe pas, je crée la classe Personne avec un nom/prénom
+4) relations existe pas, je crée la classe Relations
+5) je sais que j'ai besoin de définir quelque part des relations entre pierre et jean et paul
+	je complète le test: 
+		relations.addFriendRelation(pierre,paul)
+		relation.addFriendRelation(pierre,jean)
+	je complète le code
+		j'ai besoin d'un enum pour le type de relation
+		j'ai besoin d'un objet relation qui contient deux personnes
+		j'ai besoin que Relations garde une liste de Relations
+
+6) j'implémente le searchFriendsOf en filtrant sur l'enum RelationType.FRIEND et sur la source de la relation
+7) je vérifie que le test marche

@@ -7,7 +7,7 @@ public class Relation {
 
 
     public void addChildOf(Person father, Person child) {
-    typeRelation = Type_Relation.PARENT;
+        typeRelation = Type_Relation.PARENT;
     }
 
 
