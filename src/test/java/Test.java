@@ -1,6 +1,6 @@
 import com.domain.Person;
 import com.domain.Relation;
-import com.sun.source.tree.ParenthesizedTree;
+import com.domain.TypeRelation;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
@@ -16,10 +16,10 @@ public class Test {
         Person jean = new Person("Jean","Baudouin");
         Person paul = new Person("Paul", "Édouard");
 
-        ArrayList<Person> friends = new ArrayList<>();
+        ArrayList<Person> friends = new ArrayList<Person>();
 
 
-        Relation relation = Relation(pierre,jean,Type_Relation);
+        Relation relation = new Relation(pierre,jean, TypeRelation.FRIEND);
 
         friends=relation.searchFriendsOf(pierre);
         Assertions.assertTrue(friends.contains(jean));
