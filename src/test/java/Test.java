@@ -16,7 +16,7 @@ public class Test {
         Person jean = new Person("Jean","Baudouin");
         Person paul = new Person("Paul", "Édouard");
 
-        ArrayList<Person> friends = new ArrayList<Person>();
+        ArrayList<Person> friends;
 
 
         Relation relation = new Relation(pierre,jean, TypeRelation.FRIEND);
