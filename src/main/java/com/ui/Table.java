@@ -1,8 +1,5 @@
 package com.ui;
 
-import com.domain.Person;
-import com.domain.Relation;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -46,7 +43,7 @@ public class Table extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+/*
         Person father = new Person("Jean","Pierre");
 
         Person child = new Person("Théo","Pierre");
@@ -56,7 +53,7 @@ public class Table extends JFrame implements ActionListener {
 
         name1.setText(father.getFirstName());
         this.relation.setText(relation.getRelation(father,child).toString());
-        name2.setText(child.getFirstName());
+        name2.setText(child.getFirstName());*/
 
     }
 }
